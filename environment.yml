@@ -1,0 +1,23 @@
+name: rethinking-sparsification
+
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+
+dependencies:
+  - cudatoolkit=10.1
+  - cudnn=7.6
+  - cupti=10.1
+  - mpi4py=3.0 # installs cuda-aware openmpi
+  - nccl=2.4
+  - openmpi=4.0
+  - pandas=1.0
+  - pip=20.0
+  - pip:
+    - wandb
+  - python=3.7
+  - pytorch=1.5
+  - torchtext=0.6
+  - torchvision=0.6
+  - tqdm
